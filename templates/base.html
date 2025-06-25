@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Damien FUSTER - Botanist{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="title">
+            <h1>Damien FUSTER - Botanist</h1>
+        </div>
+        <nav class="nav-buttons">
+            <a href="/">About me</a>
+            <a href="/blog">Blog</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; Personnal site</p>
+    </footer>
+</body>
+
+</html>

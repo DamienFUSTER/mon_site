@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="content-section">
+    <h2>Blog</h2>
+    {% for article in articles %}
+      <article style="margin-bottom: 3em;">
+        <h1>{{ article.title }}</h1>
+        <p><em>{{ article.date }}</em></p>
+        <div>{{ article.content | safe }}</div>
+        <hr>
+      </article>
+    {% endfor %}
+  </div>
+{% endblock %}

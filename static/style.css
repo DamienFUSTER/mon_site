@@ -1,0 +1,199 @@
+/* Importation d'une police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+html, body {
+  background-color: #EAFBE5;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* En-tête modernisé */
+.header {
+  background-color: #4CAF50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Titre */
+.title h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Boutons de navigation */
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-buttons a {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-buttons a:hover {
+  background-color: white;
+  color: #4CAF50;
+}
+
+/* Section principale avec effet de carte */
+.content-section {
+  background-color: white;
+  padding: 25px;
+  margin: 25px auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.content-section h2 {
+  color: rgb(0, 90, 135);
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content-section h3 {
+  color: rgb(50, 70, 120);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+/* Paragraphes et listes */
+.content-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: rgb(50, 50, 50);
+}
+
+
+/* Liste des liens */
+.links-list {
+  padding-left: 20px;
+}
+
+.links-list a {
+  text-decoration: none;
+  color: #4CAF50;
+  transition: color 0.3s ease;
+}
+
+.links-list a:hover {
+  color: #388E3C;
+}
+
+/* Pied de page amélioré */
+.footer {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: auto; /* Pousse le footer en bas */
+  width: 100%;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  /* En-tête en colonne sur petits écrans */
+  .header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+/*  .nav-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  } 
+*/
+
+/*  .nav-buttons a {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+*/
+    .nav-buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .nav-buttons a {
+    font-size: 16px;
+    padding: 6px 12px;
+    max-width: 150px;
+    border-radius: 20px;
+  }
+  /* Contenu plus large sur mobile */
+  .content-section {
+    padding: 20px;
+    margin: 10px;
+    max-width: 95%;
+    flex: 1;
+  }
+
+  .content-section h2 {
+    font-size: 20px;
+    flex: 1;
+  }
+
+  .content-section p {
+    font-size: 14px;
+    flex: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Plus petits écrans */
+  .nav-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 5px;
+  }
+
+  .nav-buttons a {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .content-section h2 {
+    font-size: 18px;
+    flex: 1;
+  }
+
+  .content-section p {
+    font-size: 13px;
+    flex: 1;
+  }
+}
+
+/* Images responsives */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
